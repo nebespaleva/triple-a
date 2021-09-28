@@ -1,0 +1,43 @@
+@import '../../assets/variables.scss';
+@import '../../assets/Fonts/typography.scss';
+
+.header-post {
+    margin: 0 20px;
+    cursor: pointer;
+    height: 592px;
+    padding-left: 45px;
+    background: url(../../assets/img/HeaderPosts/HeaderPost.png) no-repeat;
+
+    &__description {
+        width: 509px;
+        height: 50%;
+        background-color: $white;
+        padding: 76px 40px 96px;
+
+        &-theme {
+            text-transform: uppercase;
+            @include rc-h3-gray;
+        }
+
+        &-postTitle {
+            @include lb-h2-black;
+            margin-bottom: 12px;
+        }
+
+        &-info {
+            margin-bottom: 14px;
+
+            &-block {
+                @include rc-info-gray;
+
+                &:first-child {
+                    margin-right: 22px;
+                }
+            }
+        }
+
+        &-short {
+            @include rc-description;
+        }
+    }
+}
