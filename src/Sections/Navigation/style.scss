@@ -1,0 +1,65 @@
+@import '../../assets/variables.scss';
+@import '../../assets/Fonts/typography.scss';
+
+.navigation-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 31px 25px 43px;
+
+    &__main {
+        display: flex;
+        align-items: center;
+
+        &-logo {
+            width: 178px;
+            height: 57px;
+            cursor: pointer;
+        }
+    }
+
+    &__login {
+        display: flex;
+        align-items: center;
+
+        &-btn {
+            width: 135px;
+            height: 46px;
+            @include lb-fz-20-normal;
+            border: 2px solid $black;
+            border-radius: 10px;
+            background-color: $white;
+            cursor: pointer;
+
+            &:hover {
+                background-color: $hover_gray;
+                transition: background-color 0.4s ease;
+            }
+        }
+    }
+
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        margin-left: 31px;
+
+        &-item {
+            @include lb-fz-20-normal;
+            cursor: pointer;
+
+            &:not(:last-child) {
+                margin-right: 31px;
+            }
+        }
+    }
+
+    &__search-icon {
+        margin-right: 21px;
+        cursor: pointer;
+    }
+}
+
+.active {
+    @include lb-fz-20-bold;
+    cursor: pointer;
+}
