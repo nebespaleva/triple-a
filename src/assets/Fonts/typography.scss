@@ -1,0 +1,17 @@
+@import '../variables.scss';
+
+@mixin lb-fz-20-normal {
+    font-family: Libre Baskerville;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 25px;
+    color: $black;
+}
+
+@mixin lb-fz-20-bold {
+    font-family: Libre Baskerville;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 25px;
+    color: $black;
+}

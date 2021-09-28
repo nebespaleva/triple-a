@@ -1,0 +1,12 @@
+@font-face {
+    font-family: "Libre Baskerville", serif;
+    src: url('./Libre_Baskerville/LibreBaskerville-Regular.ttf');
+    src: url('./Libre_Baskerville/LibreBaskerville-Bold.ttf');
+}
+
+@font-face {
+    font-family: "Roboto Condensed", sans-serif;
+    src: url('./Roboto_Condensed/RobotoCondensed-Light.ttf');
+    src: url('./Roboto_Condensed/RobotoCondensed-Regular.ttf');
+    src: url('./Roboto_Condensed/RobotoCondensed-Bold.ttf');
+}
