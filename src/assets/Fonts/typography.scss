@@ -9,9 +9,41 @@
 }
 
 @mixin lb-fz-20-bold {
-    font-family: Libre Baskerville;
+    font-family: 'Libre Baskerville';
     font-weight: 700;
     font-size: 20px;
     line-height: 25px;
+    color: $black;
+}
+
+@mixin lb-h2-black {
+    font-family: 'Libre Baskerville';
+    font-weight: bold;
+    font-size: 33px;
+    line-height: 41px;
+    color: $black;
+}
+
+@mixin rc-h3-gray {
+    font-family: 'Roboto Condensed';
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 27px;
+    color: rgba(28, 28, 28, 0.5);
+}
+
+@mixin rc-info-gray {
+    font-family: 'Roboto Condensed';
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    color: rgba(28, 28, 28, 0.5);
+}
+
+@mixin rc-description {
+    font-family: 'Roboto Condensed';
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
     color: $black;
 }
