@@ -1,0 +1,35 @@
+@import '../../assets/variables.scss';
+@import '../../assets/Fonts/typography.scss';
+
+.description {
+    width: 509px;
+    height: 300px;
+    background-color: $white;
+    padding: 76px 40px 96px;
+
+    &-theme {
+        text-transform: uppercase;
+        @include rc-h3-gray;
+    }
+
+    &-postTitle {
+        @include lb-h2-black;
+        margin-bottom: 12px;
+    }
+
+    &-info {
+        margin-bottom: 14px;
+
+        &-block {
+            @include rc-info-gray;
+
+            &:first-child {
+                margin-right: 22px;
+            }
+        }
+    }
+
+    &-short {
+        @include rc-description;
+    }
+}
