@@ -47,3 +47,11 @@
     line-height: 24px;
     color: $black;
 }
+
+@mixin rc-title {
+    font-family: 'Roboto Condensed';
+    font-weight: bolder;
+    font-size: 42px;
+    line-height: 57px;
+    color: $black;
+}
