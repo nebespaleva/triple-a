@@ -32,6 +32,14 @@
     color: rgba(28, 28, 28, 0.5);
 }
 
+@mixin rc-h3-bold {
+    font-family: 'Roboto Condensed';
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 27px;
+    color: $black;
+}
+
 @mixin rc-info-gray {
     font-family: 'Roboto Condensed';
     font-weight: normal;
@@ -46,6 +54,13 @@
     font-size: 16px;
     line-height: 24px;
     color: $black;
+}
+
+@mixin rc-tags {
+    font-family: 'Roboto Condensed';
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 45px;
 }
 
 @mixin rc-title {

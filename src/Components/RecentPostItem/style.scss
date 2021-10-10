@@ -13,6 +13,7 @@
         width: 371px;
         height: 298px;
         margin-right: 55px;
+        cursor: pointer;
     }
 
     &__description {
@@ -23,11 +24,13 @@
 
         &-postTitle {
             @include lb-h2-black;
+            cursor: pointer;
         }
 
         &-info {
             @include rc-info-gray;
             margin: 8px 0;
+            cursor: pointer;
 
             &-block:first-child {
                 margin-right: 22px;
@@ -36,6 +39,23 @@
 
         &-short {
             @include rc-description;
+            cursor: pointer;
         }
+    }
+}
+
+.other-post {
+    display: flex;
+    justify-content: space-between;
+
+    &:not(:last-child) {
+        margin-bottom: 66px;
+    }
+
+    &__img-wrapper {
+        width: 237px;
+        height: 177px;
+        margin-right: 37px;
+        cursor: pointer;
     }
 }

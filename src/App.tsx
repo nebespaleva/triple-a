@@ -3,8 +3,8 @@ import Navigation from './Sections/Navigation';
 import HeaderPost from './Sections/HeaderPost';
 import RecentPosts from './Sections/RecentPosts';
 import SecondaryPost from './Sections/SecondaryPost';
+import OtherPosts from './Sections/OtherPosts';
 import './index.css'
-
 
 function App() {
   return (
@@ -12,7 +12,8 @@ function App() {
 		<Navigation/>
 		<HeaderPost/>
 		<RecentPosts/>
-    <SecondaryPost/>
+		<SecondaryPost/>
+    <OtherPosts/>
     </>
   );
 }
