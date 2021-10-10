@@ -8,6 +8,7 @@ export interface GeneralPostDescriptionProps {
     postDate: string;
     postDescription: string;
     src?: string;
+    otherPosts?: boolean;
 }
 
 const GeneralPostDescription = ({ 
