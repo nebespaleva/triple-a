@@ -1,12 +1,13 @@
 import React from "react";
 import './style.scss'
 
-interface GeneralPostDescriptionProps {
+export interface GeneralPostDescriptionProps {
     themeTitle: string;
     postTitle: string;
     author: string;
     postDate: string;
     postDescription: string;
+    src?: string;
 }
 
 const GeneralPostDescription = ({ 
