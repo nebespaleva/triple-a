@@ -1,5 +1,5 @@
 This is personal blog
 
-#techlogys
+#technologys
 
 React, Typescript, SCSS,
