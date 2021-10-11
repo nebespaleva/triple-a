@@ -50,6 +50,7 @@ const RecentPosts = () => {
             {recentPosts.map(post => {
                 return(
                     <RecentPostItem
+                        key={post.date}
                         themeTitle={post.theme}
                         postTitle={post.title}
                         author={post.author}

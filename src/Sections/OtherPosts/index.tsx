@@ -53,6 +53,7 @@ const OtherPosts = () => {
                 {articles.map(item => {
                     return(
                         <RecentPostItem
+                            key={item.date}
                             themeTitle={item.theme}
                             postTitle={item.title}
                             author={item.author}
@@ -69,7 +70,9 @@ const OtherPosts = () => {
                 {
                     tags.map(item => {
                         return(
-                            <span className='other-posts__search-by-tags__tags'>{item}</span>
+                            <span 
+                                key={item}
+                                className='other-posts__search-by-tags__tags'>{item}</span>
                         )
                     })
                 }

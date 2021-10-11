@@ -1,10 +1,47 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { useHistory } from 'react-router-dom';
 import Button from '../../Components/Button/Button';
 import Logo from '../../assets/img/Logo.svg'
 import SearchLogo from '../../assets/img/SearchLogo.svg'
 import './style.scss';
 
-const Navigation:React.FC = () => {
+interface navigationButton {
+	title: string;
+	path: string;
+}
+
+interface navigationProps {
+	active: string;
+}
+
+const Navigation = ({ active }: navigationProps) => {
+	const [activeButton, setActiveButton] = useState<string>(active);
+	const history = useHistory();
+
+	const navButtons: navigationButton[] = [
+		{
+			title: 'Home',
+			path: '/'
+		},
+		{
+			title: 'Tags',
+			path: '/search_by_tag'
+		},
+		{
+			title: 'About Me',
+			path: '/about_me'
+		}
+	]
+
+	const handleNavigation = (path: string) => {
+		setActiveButton(path);
+		history.push(path);
+	}
+
+	const goToHomePage = () => {
+		history.push('/');
+	}
+
     return(
         <nav className="navigation-section">
 			<div className="navigation-section__main">
@@ -12,11 +49,23 @@ const Navigation:React.FC = () => {
 					src={Logo}
 					alt="Logo"
 					className="navigation-section__main-logo"
+					onClick={goToHomePage}
 				/>
 				<ul className="navigation-section__list">
-					<li className="navigation-section__list-item active">Home</li>
-					<li className="navigation-section__list-item">Tags</li>
-					<li className="navigation-section__list-item">About Me</li>
+					{
+						navButtons.map(item => {
+							return(
+								<li 
+									key={item.title}
+									className={(activeButton === item.path) 
+												? "navigation-section__list-item active" 
+												: "navigation-section__list-item"}
+									onClick={() => handleNavigation(item.path)}>
+									{item.title}
+								</li>
+							)
+						})
+					}
 				</ul>
 			</div>
 			<div className="navigation-section__login">
