@@ -5,7 +5,7 @@ import RecentPost2 from '../../assets/img/RecentPosts/recent-post-2.png';
 import RecentPost3 from '../../assets/img/RecentPosts/recent-post-3.png';
 import './style.scss';
 
-interface recentPost {
+export interface recentPost {
     theme: string;
     title: string;
     author: string;
@@ -50,6 +50,7 @@ const RecentPosts = () => {
             {recentPosts.map(post => {
                 return(
                     <RecentPostItem
+                        key={post.date}
                         themeTitle={post.theme}
                         postTitle={post.title}
                         author={post.author}

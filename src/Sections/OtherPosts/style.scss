@@ -1,0 +1,31 @@
+@import '../../assets/Fonts/typography.scss';
+@import '../../assets/variables.scss';
+
+.other-posts {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 122px;
+
+    &__wrapper {
+        margin-right: 120px;
+    }
+
+    &__search-by-tags {
+        display: flex;
+        flex-direction: column;
+        width: 24%;
+
+        &__title {
+            @include rc-h3-bold;
+        }
+
+        &__tags {
+            @include rc-tags;
+            cursor: pointer;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}

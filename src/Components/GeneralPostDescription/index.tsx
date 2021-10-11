@@ -8,6 +8,7 @@ export interface GeneralPostDescriptionProps {
     postDate: string;
     postDescription: string;
     src?: string;
+    otherPosts?: boolean;
 }
 
 const GeneralPostDescription = ({ 
@@ -17,7 +18,8 @@ const GeneralPostDescription = ({
     postDate,
     postDescription }: GeneralPostDescriptionProps) => {
     return(
-        <div className='description'>
+        <div 
+            className='description'>
             <h3 className='description-theme'>{themeTitle}</h3>
             <h2 className='description-postTitle'>{postTitle}</h2>
             <div className='description-info'>
