@@ -11,11 +11,11 @@ interface navigationButton {
 }
 
 interface navigationProps {
-	active: string;
+	active?: string;
 }
 
 const Navigation = ({ active }: navigationProps) => {
-	const [activeButton, setActiveButton] = useState<string>(active);
+	const [activeButton, setActiveButton] = useState<string | undefined>(active);
 	const history = useHistory();
 
 	const navButtons: navigationButton[] = [
@@ -40,6 +40,10 @@ const Navigation = ({ active }: navigationProps) => {
 
 	const goToHomePage = () => {
 		history.push('/');
+	}
+
+	const handleLogin = () => {
+		history.push('/login')
 	}
 
     return(
@@ -77,7 +81,7 @@ const Navigation = ({ active }: navigationProps) => {
 				<Button
 					styles='navigation-section__login-btn'
 					title='Login'
-					handleClick={() => console.log('Clicked')}
+					handleClick={() => handleLogin()}
 				/>
 			</div>
         </nav>

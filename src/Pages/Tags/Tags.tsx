@@ -1,5 +1,5 @@
 import React from "react";
-import Navigation from "../Sections/Navigation";
+import Navigation from "../../Sections/Navigation";
 
 interface TagsProps {
     active: string;
