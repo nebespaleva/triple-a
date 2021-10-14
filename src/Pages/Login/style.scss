@@ -1,0 +1,83 @@
+@import '../../assets/variables.scss';
+@import '../../assets/Fonts/typography.scss';
+
+.login {
+    margin: 50px 490px 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 324px;
+
+    &-title {
+        @include lb-h2-black;
+    }
+
+    &-subtitle {
+        @include rc-description;
+        margin: 8px 0 15px;
+    }
+
+    &-form {
+        &__input-wrapper {
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            background-color: $input_gray;
+            border-radius: 6px;
+            width: 230px;
+
+            &:first-child {
+                margin-bottom: 14px;
+            }
+        }
+
+        &__input {
+            background-color: $input_gray;
+            border: none;
+            margin-left: 10px;
+            width: 80%;
+
+            &:focus {
+                outline: none;
+            }
+        }
+
+        &__checkbox {
+            margin: 11px 0;
+
+            &-input {
+                display: none;
+            }
+
+            &-label {
+                display: inline-flex;
+                align-items: center;
+                height: 20px;
+                @include rc-small-gray;
+
+                &::before {
+                    content: '';
+                    display: inline-block;
+                    width: 16px;
+                    height: 16px;
+                    border: 1px solid $checkbox_gray;
+                    border-radius: 4px;
+                    margin-right: 5px;
+                }
+            }
+
+            &-input:checked + &-label::before {
+                background-image: url(../../assets/img/checked.svg);
+            }
+        }
+
+        &__login-btn {
+            width: 100%;
+            background-color: $white;
+            border: 1px solid $black;
+            height: 45px;
+            border-radius: 10px;
+            @include lb-fz-20-normal;
+        }
+    }
+}

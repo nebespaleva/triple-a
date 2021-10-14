@@ -70,3 +70,11 @@
     line-height: 57px;
     color: $black;
 }
+
+@mixin rc-small-gray {
+    font-family: 'Roboto Condensed';
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 16px;
+    color: $checkbox_gray;
+}

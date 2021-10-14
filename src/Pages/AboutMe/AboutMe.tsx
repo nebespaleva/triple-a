@@ -1,11 +1,9 @@
 import React from "react";
-import Navigation from "../Sections/Navigation";
+import Navigation from "../../Sections/Navigation";
+import { pageProps } from "../Home/Home";
 
-interface AboutMeProps {
-    active: string;
-}
 
-const AboutMe = ({ active }: AboutMeProps) => {
+const AboutMe = ({ active }: pageProps) => {
     return(
         <>
             <Navigation active={active}/>
