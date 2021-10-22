@@ -2,4 +2,4 @@ This is personal blog
 
 #technologys
 
-React, Typescript, SCSS,
+React, Typescript, SCSS
