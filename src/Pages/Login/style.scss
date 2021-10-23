@@ -1,8 +1,16 @@
 @import '../../assets/variables.scss';
 @import '../../assets/Fonts/typography.scss';
 
+.login-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 75vw;
+    margin: 0 auto;
+    align-items: center;
+}
+
 .login {
-    margin: 50px 490px 0;
+    margin: 150px 490px 0;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -77,7 +85,13 @@
             border: 1px solid $black;
             height: 45px;
             border-radius: 10px;
+            cursor: pointer;
             @include lb-fz-20-normal;
+
+            &:hover {
+                background-color: $hover_gray;
+                transition: background-color 0.4s ease;
+            }
         }
     }
 }
