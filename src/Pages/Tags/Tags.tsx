@@ -1,5 +1,7 @@
-import React from "react";
+import '../Home/style.scss';
+
 import Navigation from "../../Sections/Navigation";
+import React from "react";
 
 interface TagsProps {
     active: string;
@@ -7,12 +9,12 @@ interface TagsProps {
 
 const Tags = ({ active }: TagsProps) => {
     return(
-        <>
+        <div className='wrapper'>
             <Navigation active={active}/>
             <div>
                 TAGS
             </div>
-        </>
+        </div>
     )
 }
 

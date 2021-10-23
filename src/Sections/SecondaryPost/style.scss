@@ -1,9 +1,10 @@
 .secondary-post {
-    margin: 0 25px 94px;
+    margin-bottom: 94px;
     cursor: pointer;
+    width: 100%;
+    padding-right: 250px;
     height: 592px;
-    padding-right: 78px;
-    background: url(../../assets/img/SecondaryPost/SecondarySectionBackground.png) no-repeat;
+    background: url(../../assets/img/SecondaryPost/SecondarySectionBackground.png) no-repeat center;
     display: flex;
     justify-content: flex-end;
     align-items: center;
